@@ -1,181 +1,89 @@
-<style>
-  .bt-hero{
-    --bg:#0a0a0a;--text:#f5f5f5;--muted:#c7ccd1;--red:#E01E26;--border:#23272c;
-    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-    background:var(--bg);color:var(--text)
-  }
-  .bt-hero .wrap{max-width:1100px;margin:0 auto;padding:56px 18px}
-  .bt-hero h1{font-size:clamp(30px,6vw,56px);line-height:1.02;margin:0 0 12px;font-weight:900}
-  .bt-hero p{font-size:clamp(14px,2.2vw,18px);color:var(--muted);max-width:720px;margin:0 0 22px}
-  .bt-hero .cta{display:flex;gap:10px;flex-wrap:wrap}
-  .bt-hero a.btn{
-    display:inline-flex;align-items:center;justify-content:center;
-    padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:800;
-    border:1px solid var(--border);transition:transform .15s ease,opacity .15s ease
-  }
-  .bt-hero a.btn-primary{background:var(--red);color:#fff;border-color:transparent}
-  .bt-hero a.btn:hover{transform:translateY(-1px)}
-  .bt-hero .kicker{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--muted);margin-bottom:8px}
-</style>
+<section class="bt-page bt-home bt-full-bleed">
+  <div class="bt-shell">
+    <div class="bt-hero-grid">
+      <div>
+        <p class="bt-kicker">Body Tech Fitness · The People's Gym</p>
+        <h1 class="bt-heading">Join the gym built for <span>real training</span>.</h1>
+        <p class="bt-lede">Independent strength clubs with serious kit, 24/7 access and all Body Tech locations included. No contract, cancel anytime, and straightforward membership from £45pm.</p>
+        <div class="bt-cta-row">
+          <a class="bt-btn bt-btn-primary" href="#bt-choose-your-club">Join Now</a>
+          <a class="bt-btn" href="#bt-what-you-get">See What You Get</a>
+        </div>
+      </div>
 
-<section class="bt-hero">
-  <div class="wrap">
-    <div class="kicker">Body Tech Fitness</div>
-    <h1>Maximum hype.<br>Maximum output.</h1>
-    <p>Independent strength clubs with serious kit, air-conditioned spaces, and access across all locations. Join the standard that lifts everything else.</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="/joinblackburn">Join Blackburn</a>
-      <a class="btn btn-primary" href="/joinport">Join Ellesmere Port</a>
-      <a class="btn btn-primary" href="/winsford">Join Winsford</a>
-      <a class="btn btn-primary" href="/wrexham">Join Wrexham</a>
+      <aside class="bt-offer-card" aria-label="Membership offer">
+        <div class="bt-price-line">
+          <strong>£45<small>pm</small></strong>
+          <span>Membership from</span>
+        </div>
+        <div class="bt-proof-row">
+          <span class="bt-proof">24/7 access</span>
+          <span class="bt-proof">No contract</span>
+          <span class="bt-proof">Cancel anytime</span>
+          <span class="bt-proof">All locations included</span>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
 
-
-
-
-<style>
-  .bt-perks{
-    --bg:#0a0a0a;--card:#0f1113;--text:#f5f5f5;--muted:#b9bec4;
-    --border:#23272c;--red:#E01E26;
-    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-    background:var(--bg);color:var(--text)
-  }
-  .bt-perks .wrap{max-width:1100px;margin:0 auto;padding:28px 18px}
-  .bt-perks h2{font-size:22px;margin:0 0 16px;font-weight:900;text-transform:uppercase;letter-spacing:.02em}
-  .perk-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-  @media(min-width:760px){.perk-row{grid-template-columns:repeat(4,1fr)}}
-  .perk{
-    display:flex;align-items:center;gap:10px;
-    border:1px solid var(--border);
-    background:linear-gradient(180deg,var(--card),#0b0d10);
-    border-radius:14px;padding:12px 14px;
-    transition:transform .2s ease,box-shadow .2s ease
-  }
-  .perk:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
-  .perk .dot{
-    width:8px;height:8px;border-radius:999px;background:var(--red);
-    flex:0 0 auto;box-shadow:0 0 0 3px rgba(224,30,38,.18)
-  }
-  .perk span{font-weight:700}
-  .perk small{display:block;color:var(--muted);font-size:12px;line-height:1.35}
-</style>
-
-<section class="bt-perks">
-  <div class="wrap">
-    <h2>What You Get</h2>
-    <div class="perk-row">
-      <div class="perk"><div class="dot"></div><div><span>All locations included</span><small>Train at any Body Tech site</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>24/7 Access • 365 Days a Year</span><small>Any time, any day</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>No contract • Cancel any time</span><small>Full flexibility membership</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>No hidden fees</span><small>Straightforward pricing</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>Air-conditioning</span><small>Cool, controlled environment</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>On-site parking</span><small>Plenty of spaces at each club</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>Male & female sauna</span><small>Recover & reset properly</small></div></div>
-      <div class="perk"><div class="dot"></div><div><span>Industry-leading equipment</span><small>Real Leader & premium brands</small></div></div>
+<section id="bt-what-you-get" class="bt-page bt-full-bleed">
+  <div class="bt-shell">
+    <div class="bt-perks">
+      <h2 class="bt-section-title">What You Get</h2>
+      <div class="bt-perk-grid">
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>All locations included</strong><small>Train at any Body Tech site</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>24/7 access · 365 days</strong><small>Any time, any day</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>No contract</strong><small>Cancel anytime</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>No hidden fees</strong><small>Straightforward pricing</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>Air-conditioning</strong><small>Cool, controlled training spaces</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>On-site parking</strong><small>Easy access every visit</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>Sauna facilities</strong><small>Recover and reset properly</small></div></div>
+        <div class="bt-perk"><span class="bt-dot"></span><div><strong>Industry-leading equipment</strong><small>Real Leader and premium brands</small></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-
-
-
-<style>
-  .bt-locations{
-    --bg:#0a0a0a;--text:#f5f5f5;--muted:#c7ccd1;--border:#23272c;--red:#E01E26;--card:#0f1113;
-    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-    background:var(--bg);color:var(--text)
-  }
-  .bt-locations .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 42px}
-  .bt-locations h2{font-size:22px;font-weight:900;margin:0 0 12px;text-transform:uppercase;letter-spacing:.02em}
-  .grid{display:grid;gap:12px;grid-template-columns:1fr}
-  @media(min-width:740px){.grid{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:1040px){.grid{grid-template-columns:repeat(4,1fr)}}
-
-  .card{
-    border:1px solid var(--border);border-radius:18px;overflow:hidden;
-    background:linear-gradient(180deg,var(--card),#0b0d10);
-    transition:transform .25s ease,box-shadow .25s ease
-  }
-  .card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
-
-  /* 4:3 ratio */
-  .media{position:relative;aspect-ratio:4/3;background:#0b0d10}
-  .media::before{
-    content:"";position:absolute;inset:0;
-    background-image:var(--img);background-size:cover;background-position:center;
-    filter:brightness(1.05) contrast(1.05);transition:transform .4s ease;
-  }
-  .card:hover .media::before{transform:scale(1.04)}
-
-  .body{padding:12px 12px 16px}
-  .name{font-weight:900;margin:0 0 6px}
-  .meta{color:var(--muted);font-size:13px;min-height:36px;line-height:1.4}
-  .cta{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;
-    padding:10px 12px;border-radius:999px;border:1px solid var(--border);
-    text-decoration:none;font-weight:800;transition:transform .15s ease
-  }
-  .btn-primary{background:var(--red);color:#fff;border-color:transparent}
-  .btn:hover{transform:translateY(-2px)}
-</style>
-
-<section class="bt-locations">
-  <div class="wrap">
-    <h2>Choose your club</h2>
-    <div class="grid">
-
-      <!-- Wrexham -->
-      <article class="card">
-        <div class="media" style="--img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/617866d2-558a-46c5-b56d-5ff7603a9b51/Wrexham1.jpg?content-type=image%2Fjpeg');"></div>
-        <div class="body">
-          <div class="name">Wrexham</div>
-          <div class="meta">All locations included • High-standard kit • On-site parking</div>
-          <div class="cta"><a class="btn btn-primary" href="/wrexham">Join Wrexham</a></div>
+<section id="bt-choose-your-club" class="bt-page bt-full-bleed">
+  <div class="bt-shell">
+    <h2 class="bt-section-title">Choose Your Club</h2>
+    <div class="bt-location-grid">
+      <article class="bt-card">
+        <div class="bt-card-media" style="--bt-img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/617866d2-558a-46c5-b56d-5ff7603a9b51/Wrexham1.jpg?content-type=image%2Fjpeg');" role="img" aria-label="Body Tech Fitness Wrexham gym floor"></div>
+        <div class="bt-card-body">
+          <h3 class="bt-card-title">Wrexham</h3>
+          <p class="bt-card-copy">24/7 access, air-conditioned training, sauna facilities and on-site parking.</p>
+          <a class="bt-btn bt-btn-primary" href="/wrexham">Join Wrexham</a>
         </div>
       </article>
 
-      <!-- Ellesmere Port -->
-      <article class="card">
-        <div class="media" style="--img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/d8ffbc7d-d933-4d3a-84a5-6d5eb297d800/EP1.jpg?content-type=image%2Fjpeg');"></div>
-        <div class="body">
-          <div class="name">Ellesmere Port</div>
-          <div class="meta">Air-conditioned training • On-site parking • All-locations access</div>
-          <div class="cta"><a class="btn btn-primary" href="/joinport">Join Ellesmere Port</a></div>
+      <article class="bt-card">
+        <div class="bt-card-media" style="--bt-img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/d8ffbc7d-d933-4d3a-84a5-6d5eb297d800/EP1.jpg?content-type=image%2Fjpeg');" role="img" aria-label="Body Tech Fitness Ellesmere Port gym floor"></div>
+        <div class="bt-card-body">
+          <h3 class="bt-card-title">Ellesmere Port</h3>
+          <p class="bt-card-copy">24/7 access, air-conditioned training, sunbeds and on-site parking.</p>
+          <a class="bt-btn bt-btn-primary" href="/joinport">Join Ellesmere Port</a>
         </div>
       </article>
 
-      <!-- Blackburn -->
-      <article class="card">
-        <div class="media" style="--img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/f38679e9-edec-491d-9477-a119c82f62e4/Blackburn+2.jpg?content-type=image%2Fjpeg');"></div>
-        <div class="body">
-          <div class="name">Blackburn</div>
-          <div class="meta">Lancashire’s largest independent gym • 650 parking spaces • Next to Blackburn rail station</div>
-          <div class="cta"><a class="btn btn-primary" href="/joinblackburn">Join Blackburn</a></div>
+      <article class="bt-card">
+        <div class="bt-card-media" style="--bt-img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/f38679e9-edec-491d-9477-a119c82f62e4/Blackburn+2.jpg?content-type=image%2Fjpeg');" role="img" aria-label="Body Tech Fitness Blackburn gym floor"></div>
+        <div class="bt-card-body">
+          <h3 class="bt-card-title">Blackburn</h3>
+          <p class="bt-card-copy">Lancashire's largest independent gym, 24/7 access and 650 parking spaces.</p>
+          <a class="bt-btn bt-btn-primary" href="/joinblackburn">Join Blackburn</a>
         </div>
       </article>
 
-      <!-- Winsford -->
-      <article class="card">
-        <div class="media" style="--img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/6bed6bd7-92b9-4eee-b7d8-1de93e9e290b/Winsford+1.jpg?content-type=image%2Fjpeg');"></div>
-        <div class="body">
-          <div class="name">Winsford</div>
-          <div class="meta">Sauna • Strength layout • Parking on site</div>
-          <div class="cta"><a class="btn btn-primary" href="/winsford">Join Winsford</a></div>
+      <article class="bt-card">
+        <div class="bt-card-media" style="--bt-img:url('https://images.squarespace-cdn.com/content/60ca1ab0fb2c0555d548e7d7/6bed6bd7-92b9-4eee-b7d8-1de93e9e290b/Winsford+1.jpg?content-type=image%2Fjpeg');" role="img" aria-label="Body Tech Fitness Winsford gym floor"></div>
+        <div class="bt-card-body">
+          <h3 class="bt-card-title">Winsford</h3>
+          <p class="bt-card-copy">Cheshire's lifting mecca with 24/7 access, classes, sauna and parking.</p>
+          <a class="bt-btn bt-btn-primary" href="/winsford">Join Winsford</a>
         </div>
       </article>
-
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
