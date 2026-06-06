@@ -1,228 +1,74 @@
-<style>
-  /* ==== Body Tech — Ellesmere Port (hero price dominant) ==== */
-  :root{
-    --bg:#0a0a0a;
-    --card:#101214;
-    --text:#f5f5f5;
-    --muted:#b9bec4;
-    --border:#252a2f;
-    --red:#E01E26;
-  }
+<section class="bt-page bt-loc bt-full-bleed">
+  <div class="bt-shell">
+    <p class="bt-kicker">Body Tech Fitness · Ellesmere Port</p>
+    <h1 class="bt-loc-heading">Ellesmere Port membership</h1>
 
-  .bt-wrap{
-    background:var(--bg);
-    color:var(--text);
-    font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-    padding:40px 18px
-  }
-  .bt-max{max-width:1100px;margin:0 auto}
-
-  /* Hero */
-  .bt-hero{display:grid;gap:16px;margin-bottom:26px}
-  .bt-title{
-    font-size:clamp(30px,4.2vw,48px);
-    line-height:1.05;
-    font-weight:900;
-    letter-spacing:.2px
-  }
-  .bt-sub{color:var(--muted);font-size:clamp(14px,2vw,18px)}
-
-  /* === HERO PRICE STATEMENT === */
-  .bt-price{
-    margin-top:8px;
-    padding:20px 30px;
-    border-radius:20px;
-    background:
-      linear-gradient(180deg, rgba(224,30,38,.30), rgba(224,30,38,.08)),
-      radial-gradient(120% 120% at 0% 0%, rgba(224,30,38,.40), transparent 55%);
-    border:2px solid rgba(224,30,38,.7);
-    box-shadow:
-      0 14px 40px rgba(224,30,38,.35),
-      inset 0 0 0 1px rgba(255,255,255,.06);
-    display:inline-flex;
-    align-items:baseline;
-    gap:16px;
-  }
-  .bt-price strong{
-    font-size:clamp(42px,6vw,66px);
-    font-weight:1000;
-    letter-spacing:-1px;
-    line-height:1;
-  }
-  .bt-price span{
-    font-size:clamp(14px,2vw,18px);
-    font-weight:900;
-    letter-spacing:.4px;
-    text-transform:uppercase;
-    opacity:.95;
-  }
-
-  .bt-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
-  .bt-badge{
-    border:1px solid var(--border);
-    color:var(--muted);
-    padding:6px 10px;
-    border-radius:999px;
-    font-size:12px
-  }
-
-  .bt-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
-  .bt-btn{
-    background:var(--red);
-    color:#fff;
-    border:none;
-    padding:16px 22px;
-    border-radius:14px;
-    font-weight:900;
-    text-decoration:none;
-    display:inline-block
-  }
-
-  /* Sections */
-  .bt-section{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:16px;
-    padding:22px;
-    margin:14px 0;
-    box-shadow:0 8px 30px rgba(0,0,0,.25)
-  }
-  .bt-section h2{font-size:22px;margin:0 0 12px}
-  .bt-grid{display:grid;gap:14px}
-  @media(min-width:900px){.bt-grid{grid-template-columns:1.5fr 1fr}}
-
-  .bt-list{margin:0;padding-left:18px}
-  .bt-list li{margin:8px 0}
-  .bt-note{color:var(--muted);font-size:13px}
-
-  /* Amenities */
-  .bt-amen{
-    display:grid;
-    gap:10px;
-    grid-template-columns:1fr 1fr
-  }
-  @media(min-width:900px){.bt-amen{grid-template-columns:repeat(4,1fr)}}
-  .bt-amen .i{
-    background:#0f1113;
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:12px;
-    color:var(--muted);
-    font-size:14px
-  }
-  .bt-amen .i strong{
-    color:#fff;
-    display:block;
-    margin-bottom:4px
-  }
-
-  /* Map */
-  .bt-map{
-    aspect-ratio:16/9;
-    border:0;
-    width:100%;
-    border-radius:12px;
-    overflow:hidden
-  }
-
-  /* Footer CTA */
-  .bt-cta-bottom{
-    display:flex;
-    justify-content:center;
-    margin-top:18px
-  }
-</style>
-
-<section class="bt-wrap">
-  <div class="bt-max">
-
-    <!-- HERO -->
-    <header class="bt-hero">
-
-      <h1 class="bt-title">Body Tech Fitness — Ellesmere Port</h1>
-
-      <div class="bt-price">
-        <strong>£45<span style="font-size:.55em;font-weight:800">pm</span></strong>
-        <span>Cancel ANYTIME</span>
+    <aside class="bt-offer-card" aria-label="Ellesmere Port membership offer">
+      <div class="bt-price-line">
+        <strong>£45<small>pm</small></strong>
+        <span>Cancel anytime</span>
       </div>
-
-      <p class="bt-sub">
-        Open 24/7 • Multi-site access (all locations included) • Air-conditioned gym •
-        On-site parking • Sunbeds • Specialist kit • No contracts
-      </p>
-
-      <div class="bt-badges">
-        <span class="bt-badge">24/7 Access</span>
-        <span class="bt-badge">All Locations Included</span>
-        <span class="bt-badge">Air-Conditioned</span>
-        <span class="bt-badge">On-site Parking</span>
-        <span class="bt-badge">Sunbeds</span>
-        <span class="bt-badge">No Contract</span>
-        <span class="bt-badge">Cancel Anytime</span>
+      <div class="bt-proof-row">
+        <span class="bt-proof">24/7 access</span>
+        <span class="bt-proof">No contract</span>
+        <span class="bt-proof">No hidden fees</span>
+        <span class="bt-proof">All locations included</span>
       </div>
+    </aside>
 
-      <div class="bt-cta">
-        <a class="bt-btn" href="https://bodytechport.clubright.co.uk/register" target="_blank" rel="noopener">
-          Join Port
-        </a>
-      </div>
+    <p class="bt-loc-copy">Train 24/7 with multi-site access, an air-conditioned gym floor, on-site parking, sunbeds, specialist kit and straightforward membership.</p>
 
-    </header>
+    <div class="bt-badge-row">
+      <span class="bt-badge">24/7 access</span>
+      <span class="bt-badge">All locations included</span>
+      <span class="bt-badge">Air-conditioned</span>
+      <span class="bt-badge">On-site parking</span>
+      <span class="bt-badge">Sunbeds</span>
+      <span class="bt-badge">No contract</span>
+      <span class="bt-badge">Cancel anytime</span>
+    </div>
 
-    <!-- AMENITIES -->
-    <section class="bt-section">
-      <h2>What you get at Ellesmere Port</h2>
-      <div class="bt-amen">
-        <div class="i"><strong>24/7, 365</strong>Train anytime that suits you.</div>
-        <div class="i"><strong>All locations included</strong>Access any Body Tech gym.</div>
-        <div class="i"><strong>Specialist kit</strong>100+ stations; pro-tested equipment.</div>
-        <div class="i"><strong>Sunbeds</strong>On-site tanning available.</div>
-        <div class="i"><strong>Air-conditioning</strong>Stay cool and comfortable.</div>
-        <div class="i"><strong>On-site parking</strong>Free parking for members.</div>
+    <div class="bt-cta-row">
+      <a class="bt-btn bt-btn-primary" href="https://bodytechport.clubright.co.uk/register" target="_blank" rel="noopener">Join Ellesmere Port</a>
+    </div>
+
+    <section class="bt-location-panel">
+      <h2>What You Get At Ellesmere Port</h2>
+      <div class="bt-amenity-grid">
+        <div class="bt-amenity"><span class="bt-dot"></span><div><strong>24/7, 365</strong><span>Train anytime that suits you.</span></div></div>
+        <div class="bt-amenity"><span class="bt-dot"></span><div><strong>All locations included</strong><span>Access any Body Tech gym.</span></div></div>
+        <div class="bt-amenity"><span class="bt-dot"></span><div><strong>Specialist kit</strong><span>100+ stations and pro-tested equipment.</span></div></div>
+        <div class="bt-amenity"><span class="bt-dot"></span><div><strong>Sunbeds</strong><span>On-site tanning available.</span></div></div>
+        <div class="bt-amenity"><span class="bt-dot"></span><div><strong>Air-conditioning</strong><span>Stay cool and comfortable.</span></div></div>
+        <div class="bt-amenity"><span class="bt-dot"></span><div><strong>On-site parking</strong><span>Free parking for members.</span></div></div>
       </div>
     </section>
 
-    <!-- MEMBERSHIP -->
-    <section class="bt-grid">
-
-      <article class="bt-section">
-        <h2>Membership highlights</h2>
+    <section class="bt-panel-grid">
+      <article class="bt-location-panel">
+        <h2>Membership Highlights</h2>
         <ul class="bt-list">
           <li>Unlimited 24/7 access to <strong>Ellesmere Port</strong> and <strong>all Body Tech locations</strong>.</li>
           <li>Huge gym floor with specialist equipment.</li>
           <li>Sunbeds and air-conditioned training environment.</li>
           <li>Free on-site parking.</li>
-          <li>No contract • Cancel any time • No hidden fees.</li>
+          <li>No contract, no hidden fees and cancel anytime.</li>
         </ul>
-
-        <div class="bt-cta" style="margin-top:14px">
-          <a class="bt-btn" href="https://bodytechport.clubright.co.uk/register" target="_blank" rel="noopener">
-            Join Now
-          </a>
+        <div class="bt-cta-row">
+          <a class="bt-btn bt-btn-primary" href="https://bodytechport.clubright.co.uk/register" target="_blank" rel="noopener">Join Ellesmere Port</a>
         </div>
       </article>
 
-      <aside class="bt-section">
-        <h2>Where to find us</h2>
-        <p>Unit 1 &amp; 2 EMS House, Rossfield Road,<br><strong>CH65 3BS</strong></p>
-        <p class="bt-note">Open <strong>24/7</strong>, 365 days.</p>
-
-        <iframe
-          class="bt-map"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Body%20Tech%20Fitness%20Ellesmere%20Port&output=embed">
-        </iframe>
+      <aside class="bt-location-panel">
+        <h2>Where To Find Us</h2>
+        <p class="bt-address">Unit 1 &amp; 2 EMS House, Rossfield Road,<br><strong>CH65 3BS</strong></p>
+        <p class="bt-note">Open <strong>24/7</strong>, 365 days a year.</p>
+        <iframe class="bt-map" title="Map showing Body Tech Fitness Ellesmere Port" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Body%20Tech%20Fitness%20Ellesmere%20Port&output=embed"></iframe>
       </aside>
-
     </section>
 
-    <!-- FOOTER CTA -->
-    <div class="bt-cta-bottom">
-      <a class="bt-btn" href="https://bodytechport.clubright.co.uk/register" target="_blank" rel="noopener">
-        Join Port
-      </a>
+    <div class="bt-bottom-cta">
+      <a class="bt-btn bt-btn-primary" href="https://bodytechport.clubright.co.uk/register" target="_blank" rel="noopener">Join Ellesmere Port</a>
     </div>
-
   </div>
 </section>
